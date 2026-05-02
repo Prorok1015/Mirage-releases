@@ -38,30 +38,26 @@ Mirage — это P2P-мессенджер, построенный вокруг 
 
 ## 📥 Скачать
 
-Перейдите на страницу [**последнего релиза**](../../releases/latest) и выберите файл под вашу систему:
+<p align="center">
+  <a href="../../releases/latest/download/Mirage-Setup-Windows.exe">
+    <img src="https://img.shields.io/badge/Скачать_для-Windows-0078D6?style=for-the-badge&logoColor=white" alt="Скачать для Windows" />
+  </a>
+  &nbsp;
+  <a href="../../releases/latest/download/Mirage-macOS-arm64.dmg">
+    <img src="https://img.shields.io/badge/Скачать_для-macOS_(Apple_Silicon)-000000?style=for-the-badge&logo=apple&logoColor=white" alt="Скачать для macOS Apple Silicon" />
+  </a>
+  &nbsp;
+  <a href="../../releases/latest/download/Mirage-macOS-x64.dmg">
+    <img src="https://img.shields.io/badge/Скачать_для-macOS_(Intel)-555555?style=for-the-badge&logo=apple&logoColor=white" alt="Скачать для macOS Intel" />
+  </a>
+</p>
 
-<table>
-  <thead>
-    <tr>
-      <th>Система</th>
-      <th>Файл</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>🪟 <b>Windows 10 / 11</b></td>
-      <td><code>Mirage-Setup-X.Y.Z.exe</code></td>
-    </tr>
-    <tr>
-      <td>🍎 <b>macOS 12+ — Apple Silicon</b></td>
-      <td><code>Mirage-X.Y.Z-arm64.dmg</code></td>
-    </tr>
-    <tr>
-      <td>🍎 <b>macOS 12+ — Intel</b></td>
-      <td><code>Mirage-X.Y.Z-x64.dmg</code></td>
-    </tr>
-  </tbody>
-</table>
+<p align="center">
+  <sub>
+    Все версии и release notes — на странице
+    <a href="../../releases/latest"><b>последнего релиза</b></a>.
+  </sub>
+</p>
 
 > 💡 Файлы `latest.yml` и `latest-mac.yml` рядом с релизом нужны встроенному авто-апдейтеру — вручную их качать не требуется.
 
