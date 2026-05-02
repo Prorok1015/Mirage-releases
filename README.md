@@ -39,15 +39,15 @@ Mirage — это P2P-мессенджер, построенный вокруг 
 ## 📥 Скачать
 
 <p align="center" markdown="1">
-  <a href="../../releases/latest/download/Mirage-Setup-Windows.exe">
+  <a href="https://github.com/Prorok1015/Mirage-Releases/releases/latest/download/Mirage-Setup-Windows.exe">
     <img src="https://img.shields.io/badge/Скачать_для-Windows-0078D6?style=for-the-badge&logoColor=white" alt="Скачать для Windows" />
   </a>
   &nbsp;
-  <a href="../../releases/latest/download/Mirage-macOS-arm64.dmg">
+  <a href="https://github.com/Prorok1015/Mirage-Releases/releases/latest/download/Mirage-macOS-arm64.dmg">
     <img src="https://img.shields.io/badge/Скачать_для-macOS_(Apple_Silicon)-000000?style=for-the-badge&logo=apple&logoColor=white" alt="Скачать для macOS Apple Silicon" />
   </a>
   &nbsp;
-  <a href="../../releases/latest/download/Mirage-macOS-x64.dmg">
+  <a href="https://github.com/Prorok1015/Mirage-Releases/releases/latest/download/Mirage-macOS-x64.dmg">
     <img src="https://img.shields.io/badge/Скачать_для-macOS_(Intel)-555555?style=for-the-badge&logo=apple&logoColor=white" alt="Скачать для macOS Intel" />
   </a>
 </p>
@@ -55,7 +55,7 @@ Mirage — это P2P-мессенджер, построенный вокруг 
 <p align="center" markdown="1">
   <sub>
     Все версии и release notes — на странице
-    <a href="../../releases/latest"><b>последнего релиза</b></a>.
+    <a href="https://github.com/Prorok1015/Mirage-Releases/releases/latest"><b>последнего релиза</b></a>.
   </sub>
 </p>
 
