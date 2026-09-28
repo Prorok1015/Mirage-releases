@@ -1,130 +1,41 @@
 <div align="center" markdown="1">
 
-<img src="icon.svg" alt="Mirage" width="128" height="128" />
+<img src="icon.svg" alt="Mirage" width="96" height="96" />
 
-# Mirage
+# Mirage Messenger — desktop builds
 
-### Защищённый децентрализованный мессенджер
-**E2E-шифрование • Обход DPI • P2P Mesh**
-
-[![Latest Release](https://img.shields.io/github/v/release/Prorok1015/Mirage-Releases?label=latest&style=flat-square)](../../releases/latest)
-[![Platforms](https://img.shields.io/badge/platforms-Windows%20%7C%20macOS-blue?style=flat-square)](#-скачать)
-[![Status](https://img.shields.io/badge/status-alpha-orange?style=flat-square)](#)
-
-[Скачать](#-скачать) • [Установка](#-установка) • [Проверка целостности](#-проверка-целостности) • [Сообщить о проблеме](#-сообщить-о-проблеме)
+**English** · [Русский](#русский)
 
 </div>
 
----
+This repository holds only the built installers of Mirage Messenger and the feed its built-in updater reads. The source code is not here.
 
-> 📦 Этот репозиторий содержит **только готовые сборки** Mirage для конечных пользователей.
+Mirage is in **closed alpha**. If you were given a download link, use it:
 
----
+**→ [miragetalk.com/download](https://miragetalk.com/download)** — installers for Windows, macOS (Apple Silicon) and Linux, install notes and checksums.
 
-## ✨ Что такое Mirage
-
-Mirage — это P2P-мессенджер, построенный вокруг приватности по умолчанию.
-
-| | |
-|---|---|
-| 🔐 | **Сообщения видите только вы и собеседник.** Сквозное шифрование на Ed25519 + X25519 + ChaCha20-Poly1305. Серверы не имеют доступа к вашим сообщениям. |
-| 🪪 | **Никаких номеров и email.** Учётная запись — это криптографическая пара ключей, созданная на вашем устройстве. |
-| 🛡️ | **Обфусцированный трафик.** QUIC поверх UDP с TLS 1.3 — спроектирован так, чтобы быть неотличимым от обычного веб-трафика. |
-| 🌐 | **Mesh-архитектура.** Когда прямое P2P-соединение невозможно, сообщения проходят через релейные узлы в зашифрованном виде. |
-
-> ⚠️ **Alpha-релиз.** Mirage находится на ранней стадии. Используйте его для тестирования и знакомства, **но не как основной мессенджер**.
-
----
-
-## 📥 Скачать
-
-<p align="center" markdown="1">
-  <a href="https://github.com/Prorok1015/Mirage-Releases/releases/latest/download/Mirage-Setup-Windows.exe">
-    <img src="https://img.shields.io/badge/Скачать_для-Windows-0078D6?style=for-the-badge&logoColor=white" alt="Скачать для Windows" />
-  </a>
-  &nbsp;
-  <a href="https://github.com/Prorok1015/Mirage-Releases/releases/latest/download/Mirage-macOS-arm64.dmg">
-    <img src="https://img.shields.io/badge/Скачать_для-macOS_(Apple_Silicon)-000000?style=for-the-badge&logo=apple&logoColor=white" alt="Скачать для macOS Apple Silicon" />
-  </a>
-  &nbsp;
-  <a href="https://github.com/Prorok1015/Mirage-Releases/releases/latest/download/Mirage-macOS-x64.dmg">
-    <img src="https://img.shields.io/badge/Скачать_для-macOS_(Intel)-555555?style=for-the-badge&logo=apple&logoColor=white" alt="Скачать для macOS Intel" />
-  </a>
-</p>
-
-<p align="center" markdown="1">
-  <sub>
-    Все версии и release notes — на странице
-    <a href="https://github.com/Prorok1015/Mirage-Releases/releases/latest"><b>последнего релиза</b></a>.
-  </sub>
-</p>
-
-> 💡 Файлы `latest.yml` и `latest-mac.yml` рядом с релизом нужны встроенному авто-апдейтеру — вручную их качать не требуется.
-
----
-
-## 🛠 Установка
-
-<details markdown="1">
-<summary><b>🪟 Windows</b></summary>
-
-1. Запустите `Mirage-Setup-X.Y.Z.exe`.
-2. Если SmartScreen покажет предупреждение об «unknown publisher» — нажмите **«Подробнее»** → **«Выполнить в любом случае»**.
-3. Следуйте инструкциям установщика.
-
-</details>
-
-<details markdown="1">
-<summary><b>🍎 macOS</b></summary>
-
-1. Откройте `.dmg` и перетащите Mirage в папку **Applications**.
-2. При первом запуске macOS может сказать, что приложение от неизвестного разработчика. Откройте **Системные настройки** → **Безопасность и конфиденциальность** и нажмите **«Открыть в любом случае»**.
-
-</details>
-
-### 🔄 Автоматические обновления
-
-После установки Mirage сам проверяет наличие новых версий через этот репозиторий и предлагает обновиться. Достаточно нажать на уведомление.
-
-Управлять поведением апдейтера можно в **Настройках → Обновления**.
-
----
-
-## 🔍 Проверка целостности
-
-К каждому релизу прилагается файл **`SHA256SUMS.txt`** с контрольными суммами. Проверьте загруженный файл перед установкой.
-
-**Windows (PowerShell):**
-```powershell
-Get-FileHash Mirage-Setup-X.Y.Z.exe -Algorithm SHA256
-```
-
-**macOS / Linux:**
-```bash
-shasum -a 256 Mirage-X.Y.Z-arm64.dmg
-```
-
-Полученное значение должно совпадать со строкой из `SHA256SUMS.txt`.
-
----
-
-## 🐞 Сообщить о проблеме
-
-| Тип | Куда писать |
-|---|---|
-| 🐛 **Баги, предложения, вопросы** | Откройте issue в этом репозитории |
-| 💥 **Краш-репорты** | Включаются опцией **«Отчёты об ошибках»**. Клиент сам отправит минидампы — без содержимого сообщений. |
-
----
-
-## 📜 Лицензия
-
-© Mirage Project. Все права защищены. Условия использования будут опубликованы вместе с beta-релизом.
+- Every release, with release notes, is on the [Releases](https://github.com/Prorok1015/Mirage-releases/releases) page. `SHA256SUMS.txt` in each release lists the checksums of every installer.
+- `latest*.yml` files are for the built-in updater; you don't need to download them.
+- Bugs and questions: [hello@miragetalk.com](mailto:hello@miragetalk.com). Crash reports are sent by the app itself if you turn on **Settings → Crash reports**; they never include message content.
+- Use of the alpha builds is governed by the EULA attached to each release.
 
 ---
 
 <div align="center" markdown="1">
 
-**Сделано с заботой о приватности**
+## Русский
+
+[English](#mirage-messenger--desktop-builds) · **Русский**
 
 </div>
+
+Здесь лежат только готовые установщики Mirage Messenger и файлы, из которых встроенный апдейтер узнаёт о новых версиях. Исходного кода здесь нет.
+
+Mirage сейчас в **закрытой альфе**. Если вам дали ссылку на скачивание, откройте её:
+
+**→ [miragetalk.com/ru/download](https://miragetalk.com/ru/download)** — установщики для Windows, macOS (Apple Silicon) и Linux, инструкции по установке и контрольные суммы.
+
+- Все версии и описания изменений — на странице [Releases](https://github.com/Prorok1015/Mirage-releases/releases). В каждом релизе есть `SHA256SUMS.txt` с контрольными суммами всех установщиков.
+- Файлы `latest*.yml` нужны встроенному апдейтеру, скачивать их не нужно.
+- Ошибки и вопросы: [hello@miragetalk.com](mailto:hello@miragetalk.com). Отчёты о сбоях приложение отправляет само, если включить **Настройки → Отчёты об ошибках**; содержимое сообщений в них не попадает.
+- Использование альфа-сборок регулируется EULA, приложенным к каждому релизу.
